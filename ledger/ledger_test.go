@@ -1,6 +1,8 @@
 package ledger_test
 
 import (
+	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/cosmos/cosmos-sdk/crypto/keys/eth/eip712"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	gethaccounts "github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/common"
@@ -9,7 +11,6 @@ import (
 	"github.com/evmos/evmos-ledger-go/ledger"
 	"github.com/evmos/evmos/v12/app"
 	"github.com/evmos/evmos/v12/encoding"
-	"github.com/evmos/evmos/v12/ethereum/eip712"
 )
 
 // Test Mnemonic:
@@ -18,7 +19,8 @@ import (
 // Load encoding config for sign doc encoding/decoding
 func init() {
 	config := encoding.MakeConfig(app.ModuleBasics)
-	eip712.SetEncodingConfig(config)
+	eip712.AminoCodec = config.Amino
+	eip712.ProtoCodec = codec.NewProtoCodec(config.InterfaceRegistry)
 	sdk.GetConfig().SetBech32PrefixForAccount("cosmos", "")
 }
 
