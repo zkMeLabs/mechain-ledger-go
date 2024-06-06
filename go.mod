@@ -7,7 +7,7 @@ require (
 	github.com/ethereum/go-ethereum v1.11.5
 	github.com/evmos/evmos/v12 v12.0.0-20230310230306-719363fbb92f
 	github.com/stretchr/testify v1.8.4
-	github.com/zondax/hid v0.9.1
+	github.com/zondax/hid v0.9.2
 )
 
 require (
