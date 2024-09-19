@@ -17,3 +17,7 @@ Evmos-Ledger-Go provides a Cosmos SDK Ledger object which can be instantiated, s
 
 The Ledger will take a signature byte stream of either Amino (legacy) or Protobuf type payloads, decode the payload using the provided `EncodingConfig`,
 construct an EIP-712`TypedData` payload to be signed with the Ethereum Ledger app, and return the signature.
+
+## Fork Information
+
+This project is forked from [evmos-ledger-go](https://github.com/evmos/evmos-ledger-go). Significant changes have been made to adapt the project for specific use cases, but much of the core functionality comes from the original project.
