@@ -197,13 +197,13 @@ require (
 )
 
 replace (
-	cosmossdk.io/api => github.com/zkMeLabs/mechain-cosmos-sdk/api v0.0.0-20240920090443-1ad031a3d3a4
-	cosmossdk.io/simapp => github.com/zkMeLabs/mechain-cosmos-sdk/simapp v0.0.0-20240920090443-1ad031a3d3a4
+	cosmossdk.io/api => github.com/zkMeLabs/mechain-cosmos-sdk/api v0.0.0-20241017101002-ab985b5a45ec
+	cosmossdk.io/simapp => github.com/zkMeLabs/mechain-cosmos-sdk/simapp v0.0.0-20241017101002-ab985b5a45ec
 	github.com/btcsuite/btcd => github.com/btcsuite/btcd v0.22.1
-	github.com/cometbft/cometbft => github.com/zkMeLabs/mechain-cometbft v1.3.0-mechain.1
-	github.com/cosmos/cosmos-sdk => github.com/zkMeLabs/mechain-cosmos-sdk v0.2.0-alpha.1
+	github.com/cometbft/cometbft => github.com/zkMeLabs/mechain-cometbft v1.3.0-mechain.2
+	github.com/cosmos/cosmos-sdk => github.com/zkMeLabs/mechain-cosmos-sdk v0.2.0-alpha.3
 	github.com/cosmos/gogoproto => github.com/zkMeLabs/gogoproto v1.4.10-mechain.1
-	github.com/cosmos/ibc-go/v7 => github.com/zkMeLabs/mechain-ibc-go/v7 v7.2.0-mocks-mechain.1
+	github.com/cosmos/ibc-go/v7 => github.com/zkMeLabs/mechain-ibc-go/v7 v7.2.0-mocks-mechain.2
 	github.com/ethereum/go-ethereum => github.com/evmos/go-ethereum v1.10.26-evmos-rc2
 	github.com/evmos/evmos/v12 => github.com/zkMeLabs/mechain/v12 v12.0.0-20240909112204-cc4b143af09f
 	github.com/gogo/protobuf => github.com/regen-network/protobuf v1.3.3-alpha.regen.1
